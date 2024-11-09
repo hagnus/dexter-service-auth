@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                                      
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@middlewares/*": ["src/middlewares/*"],
+      "@routes/*": ["src/routes/*"],
+      "@data/*": ["src/data/*"],
+      "@domains/*": ["src/domains/*"],
+      "@constants": ["src/constants.ts"]
+    },
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["**/*.ts"],
+  "files": [
+    "index.d.ts",
+  ],
+}
